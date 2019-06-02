@@ -95,7 +95,12 @@ go build server.go
 
 ## Screenshots
 
-
+![Screenshot](screenshots/ar1.jpeg)
+![Screenshot](screenshots/ar2.jpeg)
+![Screenshot](screenshots/ar3.jpeg)
+![Screenshot](screenshots/en1.jpeg)
+![Screenshot](screenshots/en2.jpeg)
+![Screenshot](screenshots/en3.jpeg)
 
 
 ## Final notes

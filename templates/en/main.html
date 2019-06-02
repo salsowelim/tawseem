@@ -1,0 +1,44 @@
+{{ template "header.html" . }}
+{{if .IsError}}
+<div class="alert alert-danger">
+  <strong> {{ .ErrorMsg}}  </strong>
+</div>
+{{end}}
+<div>
+  <p>
+    Text ID: {{.Id}}
+  </p>
+</div>
+<div id="elementId">
+  <p  class="fontb2"> {{.Word}} </p>
+</div>
+<br>
+<form class="fontb" role="form" method="POST">
+  {{ template "user_form.html" . }}
+  <center>
+  <div class="left" style="font-size:10% !important; width: 30%;height: 60px;" >
+    <div class="progress" style="height: 35px;">
+      <div class="progress-bar " role="progressbar" aria-valuenow="{{.Percent}}" aria-valuemin="0" aria-valuemax="100" style="min-width:7em; width:{{.Percent}}%;">
+        Progress {{.Percent}} %
+      </div>
+    </div>
+  </div>
+  <button type="submit" id="bpre" name="goback" value="goback" class="btn btn-secondary"> Previous word </button>
+  <button type="submit" id ="bpos" class="btn btn-primary">Next word</button>
+  <script type="text/javascript">
+  button1 = document.getElementById("bpre");
+  button1.setAttribute('disabled', true);
+  setTimeout(function(){
+  button1.removeAttribute('disabled');
+  }, 700)
+  button2 = document.getElementById("bpos");
+  button2.setAttribute('disabled', true);
+  setTimeout(function(){
+  button2.removeAttribute('disabled');
+  }, 700)
+  window.location.hash = '#theword';
+  </script>
+  </center>
+</form>
+<div class="col-xs-12" style="height:30px;"></div>
+{{ template "footer.html" . }}

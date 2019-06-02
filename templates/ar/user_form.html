@@ -1,0 +1,234 @@
+<div class="input-group">
+  <label> هل الكلمة بحاجة للتقطيع؟
+    <span style="font-weight: bolder; color: red;">*</span>
+  </label>
+  
+  <div class="input-group">
+    <label>
+      <input id="hide" type="radio" name="isSegmented" checked="" value="yes">
+      لا، ليست بحاجة للتقطيع
+    </label>
+    &nbsp;&nbsp;
+    <label>
+      <input id="show" type="radio" name="isSegmented"  value="no" >
+      نعم، بحاجة للتقطيع
+    </label>
+  </div>
+  <div>
+    <div id="demo" class="collapse">
+      <div class="checkbox">
+        <label data-toggle="collapse" data-target="#collapseOne">
+          <input type="checkbox" name="b_segmented"value="0">
+          يوجد إضافات قبل الكلمة
+        </label>
+      </div>
+      <div class="row">
+        <div id = "collapseOne" class="form-group collapse">
+          <div class="col-md-12">
+            <p>
+              <span style="color: #e07700;"> تنبيه: ترتيب الاضافات يكون من اليمين إلى اليسار.
+                مثال:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                وستعلم
+              </span>
+              <span style="color: #e07700;">
+                الاضافة الأولى:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                و
+              </span>
+              <span style="color: #e07700;">
+                الاضافة الثانية:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                س
+              </span>
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <label for="viewSelector">عدد الإضافات السابقة
+              <span style="font-weight: bolder; color: red;">*</span>
+            </label>
+            <select class="input-small form-control" name="b_no_s" id="viewSelector">
+              <option value="0">-- اختر --</option>
+              <option value="view1">١</option>
+              <option value="view2">٢</option>
+              <option value="view3">٣</option>
+              <option value="view4">٤</option>
+            </select>
+            <div id="view1">
+              <select class="input-small form-control" name="b_1_s" id="vview1">
+                <option value="">-- الإضافة الأولى --</option>
+                <option value="أ">أ - استفهام</option>
+                <option value="ب">ب - جر</option>
+                <option value="س">س - استقبال</option>
+                <option value="ف">ف - عطف، سببية</option>
+                <option value="ك">ك - تشبيه</option>
+                <option value="ل">ل - جر، جزم، توكيد</option>
+                <option value="و">و - عطف</option>
+              </select>
+            </div>
+            <div id="view2">
+              <select class="input-small form-control" name="b_2_s" id="vview2">
+                <option value="">-- الإضافة الثانية --</option>
+                <option value="أ">أ - استفهام</option>
+                <option value="ب">ب - جر</option>
+                <option value="س">س - استقبال</option>
+                <option value="ف">ف - عطف، سببية</option>
+                <option value="ك">ك - تشبيه</option>
+                <option value="ل">ل - جر، جزم، توكيد</option>
+                <option value="و">و - عطف</option>
+              </select>
+            </div>
+            <div id="view3">
+              <select class="input-small form-control" name="b_3_s" id="vview3">
+                <option value="">-- الإضافة الثالثة --</option>
+                <option value="أ">أ - استفهام</option>
+                <option value="ب">ب - جر</option>
+                <option value="س">س - استقبال</option>
+                <option value="ف">ف - عطف، سببية</option>
+                <option value="ك">ك - تشبيه</option>
+                <option value="ل">ل - جر، جزم، توكيد</option>
+                <option value="و">و - عطف</option>
+              </select>
+            </div>
+            <div id="view4">
+              <select class="input-small form-control" name="b_4_s" id="vview4">
+                <option value="">-- الإضافة الرابعة --</option>
+                <option value="أ">أ - استفهام</option>
+                <option value="ب">ب - جر</option>
+                <option value="س">س - استقبال</option>
+                <option value="ف">ف - عطف، سببية</option>
+                <option value="ك">ك - تشبيه</option>
+                <option value="ل">ل - جر، جزم، توكيد</option>
+                <option value="و">و - عطف</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox">
+        <label data-toggle="collapse" data-target="#collapseTwo">
+          <input type="checkbox" value="0" name="a_segmented" >
+          يوجد إضافات بعد الكلمة
+        </label>
+      </div>
+      <div class="row">
+        
+        <div id = "collapseTwo" class="form-group collapse">
+          <div class="col-md-12">
+            <p>
+              <span style="color: #e07700;"> تنبيه: ترتيب الاضافات يكون من اليمين إلى اليسار.
+                مثال:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                كتبناها
+              </span>
+              <span style="color: #e07700;">
+                الاضافة الأولى:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                نا
+              </span>
+              <span style="color: #e07700;">
+                الاضافة الثانية:
+              </span>
+              <span style="font-weight: bolder; color: red;">
+                ها
+              </span>
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <label for="viewSelector2">عدد الإضافات اللاحقة
+              <span style="font-weight: bolder; color: red;">*</span>
+            </label>
+            <select class="input-small form-control" name="a_no_s" id="viewSelector2">
+              <option value="0">-- اختر --</option>
+              <option value="2view1">١</option>
+              <option value="2view2">٢</option>
+              <option value="2view3">٣</option>
+              <option value="2view4">٤</option>
+            </select>
+            <div id="2view1">
+              <select class="input-small form-control" name="a_1_s" id="2vview1">
+                <option value="">-- الإضافة الأولى --</option>
+                <option value="ت">ت - للمتكلم،للمخاطبة </option>
+                <option value="ك">ك - للمخاطبة</option>
+                <option value="ه">ه - للغائب</option>
+                <option value="ها">ها - للغائبة</option>
+                <option value="نا">نا - للمتكلمين</option>
+                <option value="تما">تما - للمثنى </option>
+                <option value="كما">كما - للتثنية</option>
+                <option value="ا">ا - للغائبين</option>
+                <option value="تا">تا - للغائبتين</option>
+                <option value="هما">هما - للمثنى</option>
+                <option value="وا">وا - للجماعة</option>
+              </select>
+            </div>
+            <div id="2view2">
+              <select class="input-small form-control" name="a_2_s" id="2vview2">
+                <option value="">-- الإضافة الثانية --</option>
+                <option value="ت">ت - للمتكلم،للمخاطبة </option>
+                <option value="ك">ك - للمخاطبة</option>
+                <option value="ه">ه - للغائب</option>
+                <option value="ها">ها - للغائبة</option>
+                <option value="نا">نا - للمتكلمين</option>
+                <option value="تما">تما - للمثنى </option>
+                <option value="كما">كما - للتثنية</option>
+                <option value="ا">ا - للغائبين</option>
+                <option value="تا">تا - للغائبتين</option>
+                <option value="هما">هما - للمثنى</option>
+                <option value="وا">وا - للجماعة</option>
+              </select>
+            </div>
+            <div id="2view3">
+              <select class="input-small form-control" name="a_3_s" id="2vview3">
+                <option value="">-- الإضافة الثالثة --</option>
+                <option value="ت">ت - للمتكلم،للمخاطبة </option>
+                <option value="ك">ك - للمخاطبة</option>
+                <option value="ه">ه - للغائب</option>
+                <option value="ها">ها - للغائبة</option>
+                <option value="نا">نا - للمتكلمين</option>
+                <option value="تما">تما - للمثنى </option>
+                <option value="كما">كما - للتثنية</option>
+                <option value="ا">ا - للغائبين</option>
+                <option value="تا">تا - للغائبتين</option>
+                <option value="هما">هما - للمثنى</option>
+                <option value="وا">وا - للجماعة</option>
+              </select>
+            </div>
+            <div id="2view4">
+              <select class="input-small form-control" name="a_4_s" id="2vview4">
+                <option value="">-- الإضافة الرابعة --</option>
+                <option value="ت">ت - للمتكلم،للمخاطبة </option>
+                <option value="ك">ك - للمخاطبة</option>
+                <option value="ه">ه - للغائب</option>
+                <option value="ها">ها - للغائبة</option>
+                <option value="نا">نا - للمتكلمين</option>
+                <option value="تما">تما - للمثنى </option>
+                <option value="كما">كما - للتثنية</option>
+                <option value="ا">ا - للغائبين</option>
+                <option value="تا">تا - للغائبتين</option>
+                <option value="هما">هما - للمثنى</option>
+                <option value="وا">وا - للجماعة</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <div class = "form-inline">
+          <div class="form-group">
+            <label for="stm" class="">
+              يرجى كتابة الكلمة في حالتها الأصلية:
+            </label>
+            <input type="text" class="form-control" id = "stm" name="stm" placeholder="( بدون الإضافات ) " value="">
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>

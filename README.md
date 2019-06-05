@@ -2,7 +2,7 @@
 # Tawseem: NLP crowdsourcing platform for word-level annotations. 
 
 
-Tawseem (توسيم) is a web application for crowdsourcing basic word-level NLP annotations tasks, such as word segmentation and part of speech tagging. This manual processing is perhaps required for building training datasets from scratch, to be used in NLP train-based systems.
+Tawseem (توسيم) is a web application for crowdsourcing basic word-level NLP annotations tasks, such as word segmentation and part of speech tagging. This manual processing is perhaps required for building training datasets from ground up, to be used in NLP train-based systems.
 
 Tawseem was built primarily for Arabic word segmentation. However, I have tried to make it easier to extend functionality and language support. For illustration, a POS tagging job for English was created (read on for instructions on such extension).
 
